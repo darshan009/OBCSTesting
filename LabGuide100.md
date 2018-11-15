@@ -4,7 +4,7 @@ Updated: November 14, 2018
 
 ## Introduction
 
-This is the first of several labs that are part of the **Oracle Blockchain Cloud workshop.** This will walk you through the process of creating and running offline tests for your chaincode application.
+This is the first of several labs that are part of the **Oracle Blockchain Cloud workshop.** This will walk you through the process of   creating and running offline tests for your chaincode application.
 
 This lab assumes that you have the chaincode set up and ready with atleast one function (initSomething should do), that you can use for testing.
 

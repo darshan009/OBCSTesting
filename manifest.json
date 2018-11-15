@@ -1,6 +1,6 @@
 {
     "workshop": {
-        "title": "Workshop Title",
+        "title": "OBCS Chaincode Testing",
         "description": "Description of this workshop.",
         "theme": "default",
         "interactive":"https://launch.oracle.com/?",
@@ -8,12 +8,10 @@
             {
                 "number": "100",
                 "filename": "LabGuide100.md",
-                "title": "Lab 100: Agile Project Management, plus an even longer section of text that will almost assuredly wrap unto the proximate lineage.",
-                "description": "Use Developer Cloud Service to create issues, tasks, and sprints, plus an even longer section of text that will almost assuredly wrap unto the proximate lineage, plus an even longer section of text that will almost assuredly wrap unto the proximate lineage."
+                "title": "Lab 100: Chaincode Testing.",
+                "description": "Creating and running offline tests for your chaincode application."
 
             }
-
-
         ]
     }
 }
