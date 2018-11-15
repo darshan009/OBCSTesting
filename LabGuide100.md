@@ -134,3 +134,8 @@ You can either create a new function in order to verify each field in your expec
 		t.Fatalf("Unexpected response received")
 	}
 ```
+
+
+You should end up with something like this in your terminal
+
+![](images/outputInitScooter.png)
