@@ -1,7 +1,7 @@
 {
     "workshop": {
         "title": "OBCS Chaincode Testing",
-        "description": "Description of this workshop.",
+        "description": "Running offline tests for your chaincode application.",
         "theme": "default",
         "interactive":"https://launch.oracle.com/?",
         "labs": [
