@@ -99,6 +99,22 @@ This method will make a mock call to the initScooter function and save the data 
 
 ```
 
+**NOTE:** invokeResult is a peer.Response Object, which has the following three fields, use according to your case:
+
+```
+	type Response struct {
+		// A status code that should follow the HTTP status codes. 
+		Status int32
+		
+		// A message associated with the response code.
+		Message string
+		
+		// A payload that can be used to include metadata with this response.
+		Payload []byte
+	}
+
+```
+
 
 Now, in order to check if the data was entered correctly you need to make a getState call with the same scooter Id you used above and in order to verify, create an expected result variable that you want to match with as below (newScooter).
 
@@ -111,7 +127,7 @@ Now, in order to check if the data was entered correctly you need to make a getS
         t.Errorf("Vehicle part does not exist: " + scooterId)
     }
 
-    newScooter := scooter{"scooter", "10", "Darshan", "Lyft", "abc", "efg"}
+    expectedOutput := scooter{"scooter", "10", "Darshan", "Lyft", "abc", "efg"}
 
 ```
 
@@ -127,14 +143,22 @@ You can either create a new function in order to verify each field in your expec
 	
 	}
 	fmt.Println(resultJSON)
-	fmt.Println(newScooter)
+	fmt.Println(expectedOutput)
 
-	isEqual := reflect.DeepEqual(resultJSON, newScooter)
+	isEqual := reflect.DeepEqual(resultJSON, expectedOutput)
 	if !isEqual {
 		t.Fatalf("Unexpected response received")
 	}
 ```
 
+
+### **STEP 3**: Verify your console for passed/failed test cases
+
+Run the following in your terminal where your test file is located:
+
+```
+	go test
+```
 
 You should end up with something like this in your terminal
 
